@@ -68,11 +68,7 @@
           estudo, sendo suas principais aliadas na trajetória acadêmica. Com
           determinação, Brenda se formou na Universidade Federal do Rio Grande
           do Sul
-          <abbr
-            title="Universidade Federal do Rio Grande
-          do Sul"
-            >(UFRGS)</abbr
-          >
+         (UFRGS)
           em 2018 e já tinha seu lugar no mercado.
         </p>
 
@@ -105,7 +101,7 @@
     <section class="news__section py-8">
       <div class="container">
         <p>
-          Em dezembro de 2023, o Google Trends divulgou um levantamento sobre o
+          Em dezembro de 2023, o <a href="https://trends.google.com.br/trends/yis/2023/BR/?hl=pt">Google Trends</a> divulgou um levantamento sobre o
           que os brasileiros mais pesquisaram na plataforma ao longo do ano.
           Entre as tendências que marcaram o período, o mercado de trabalho não
           poderia ficar de fora. Porém, diferente dos anos anteriores, não foi
