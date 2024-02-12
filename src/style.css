@@ -1,0 +1,67 @@
+/* Reset CSS */
+
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, blockquote, fieldset, legend {
+  margin: 0;
+}
+
+/* Remove default padding */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, blockquote, fieldset {
+  padding: 0;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* Reset font styles for strong and emphasis elements */
+strong, em {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Remove text-decoration from anchor elements */
+a {
+  text-decoration: none;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove border on tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+:root{
+  --bege: #EBDACC;
+  --marrom-claro: #B2784A;
+  --marrom-escuro: #59371C;
+  --white: #fff;
+  --black: #000;
+}

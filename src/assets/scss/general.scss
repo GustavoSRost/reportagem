@@ -1,0 +1,43 @@
+
+// Definindo variáveis para os breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+// Container responsivo
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    // Adicionando breakpoints
+    @media (min-width: $breakpoint-mobile) {
+        max-width: $breakpoint-mobile;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        max-width: $breakpoint-tablet;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: $breakpoint-desktop;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
