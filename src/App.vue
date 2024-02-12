@@ -1,12 +1,12 @@
 <script>
 import { RouterView } from "vue-router";
-import Footer from "./components/organism/Footer.vue";
+import FooterVue from "./components/organism/Footer.vue";
 import HeaderVue from "./components/organism/Header.vue";
 export default {
   components: {
     RouterView,
     HeaderVue,
-    Footer,
+    FooterVue,
   },
 };
 </script>
@@ -14,7 +14,7 @@ export default {
 <template>
   <HeaderVue />
   <router-view></router-view>
-  <footer></footer>
+  <FooterVue></FooterVue>
 </template>
 
 <style>
