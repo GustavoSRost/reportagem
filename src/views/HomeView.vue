@@ -527,7 +527,7 @@
         <p class="col-12 text-center">Fonte: PNAD</p>
       </div>
     </section>
-    <section class="news__section">
+    <section class="news__section news__section--chart">
       <div class="container py-8">
         <h2 class="mb-4">Futuros possíveis</h2>
         <p>
@@ -1045,4 +1045,4 @@ main {
     max-width: 100%;
   }
 }
-</style>>
+</style>
