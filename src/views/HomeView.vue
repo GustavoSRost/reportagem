@@ -10,37 +10,43 @@
         <h5>Por Carla Melo, Daniela Lacerda, Laura Borges, Renata Rosa.</h5>
       </div>
     </section>
-    <section class="news__section container">
-      <p>
-        Gustavo Rost, 22, acorda todo dia para trabalhar por volta das oito
-        horas da manhã. Ele mora no bairro Jardim Carvalho, na Zona Leste de
-        Porto Alegre e divide com a namorada um apartamento de três quartos que
-        já era propriedade da família. Filho de uma química e um advogado, a
-        faculdade foi uma certeza desde sua infância e a área de interesse
-        também era clara: Ciência da Computação. Por escolher se
-        profissionalizar na tecnologia, o trabalho remoto foi uma realidade
-        esperada por ele antes mesmo de a pandemia tornar esse formato uma
-        necessidade.
-      </p>
-      <p>
-        Segundo a pesquisa Gestão de Pessoas na Crise covid-19, elaborada pela
-        Fundação Instituto de Administração (FIA) em 2020, 46% das empresas
-        adotaram o modelo remoto como medida emergencial para não colocar em
-        risco os trabalhadores. Para Gustavo, esse modelo se manteve durante e
-        após o período de isolamento, uma prática já comum para quem trabalha
-        com computação.
-      </p>
-      <p>
-        O jovem ingressou na graduação na Unisinos em 2022 e sempre trabalhou de
-        casa. Sobre a possibilidade de voltar ao formato tradicional de
-        trabalho, ressalta:
-        <q
-          >[o trabalho remoto] é cansativo, igual ao trabalho presencial, no
-          escritório, mas não deixa de ser produtivo, continuo tendo as mesmas
-          responsabilidades, só que estou no conforto do meu lar. Nem por um
-          salário maior ou outros benefícios eu trocaria pelo presencial</q
-        >.
-      </p>
+    <section class="news__section my-8 py-3">
+      <div class="container pb-5">
+        <p>
+          Gustavo Rost, 22, acorda todo dia para trabalhar por volta das oito
+          horas da manhã. Ele mora no bairro Jardim Carvalho, na Zona Leste de
+          Porto Alegre e divide com a namorada um apartamento de três quartos
+          que já era propriedade da família. Filho de uma química e um advogado,
+          a faculdade foi uma certeza desde sua infância e a área de interesse
+          também era clara: Ciência da Computação. Por escolher se
+          profissionalizar na tecnologia, o trabalho remoto foi uma realidade
+          esperada por ele antes mesmo de a pandemia tornar esse formato uma
+          necessidade.
+        </p>
+      </div>
+      <div id="first-section" class="inside-paralax">
+      </div>
+      <div class="container pt-8">
+        <p>
+          Segundo a pesquisa Gestão de Pessoas na Crise covid-19, elaborada pela
+          Fundação Instituto de Administração (FIA) em 2020, 46% das empresas
+          adotaram o modelo remoto como medida emergencial para não colocar em
+          risco os trabalhadores. Para Gustavo, esse modelo se manteve durante e
+          após o período de isolamento, uma prática já comum para quem trabalha
+          com computação.
+        </p>
+        <p>
+          O jovem ingressou na graduação na Unisinos em 2022 e sempre trabalhou
+          de casa. Sobre a possibilidade de voltar ao formato tradicional de
+          trabalho, ressalta:
+          <q
+            >[o trabalho remoto] é cansativo, igual ao trabalho presencial, no
+            escritório, mas não deixa de ser produtivo, continuo tendo as mesmas
+            responsabilidades, só que estou no conforto do meu lar. Nem por um
+            salário maior ou outros benefícios eu trocaria pelo presencial</q
+          >.
+        </p>
+      </div>
     </section>
     <section
       class="news__section news__section--image grid align-content-center"
@@ -275,7 +281,7 @@ main {
       }
     }
     &__image {
-      background: url("../assets/img/paralax-img.webp");
+      background: url("../assets/img/gustavo_img.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -286,6 +292,12 @@ main {
       }
     }
     &__section {
+      .inside-paralax{
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
       &:not(.news__section--paralax) {
         h3 {
           font-size: 4rem;
@@ -338,6 +350,7 @@ main {
         background: var(--bege);
         color: var(--marrom-escuro);
         padding-left: 10%;
+        max-height: 100vh;
         img {
           object-fit: cover;
           height: 100%;
@@ -363,7 +376,7 @@ main {
         justify-content: center;
         width: 100%;
         height: 100vh;
-        background-image: url("../assets/img/paralax-img.webp") !important;
+        background-image: url("../assets/img/paralax.gif") !important;
         background-attachment: fixed;
         background-size: cover;
         &::before {
@@ -404,6 +417,9 @@ main {
       }
     }
   }
+}
+#first-section{
+  background-image: url("../assets/img/gustavo_img.webp");
 }
 @keyframes background {
   from {
