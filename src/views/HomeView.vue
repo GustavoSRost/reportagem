@@ -477,7 +477,7 @@
         <p class="col-12 text-center">Fonte: PNAD</p>
       </div>
     </section>
-    <section class="news__section">
+    <section class="news__section news__section--chart">
       <div class="container py-8">
         <p>
           Quanto à escolaridade, a distribuição desigual é homogênea em todas as

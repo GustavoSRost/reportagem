@@ -43,7 +43,7 @@ export default {
   box-shadow: 0px 10px 100px 56px rgba(0, 0, 0, 0.1);
   min-height: 450px;
   > *, a{
-    color: var(--white);
+    color: var(--white) !important;
   }
   img{
     aspect-ratio: 1/2;
