@@ -11,6 +11,13 @@
     </section>
     <section class="news__section my-8 py-3">
       <div class="container pb-5">
+        <div class="flex align-items-center justify-content-center gap-3 mb-5">
+          <p class="my-0 mr-1">Ouça este conteúdo:</p>
+          <audio
+            :src="fetchAudio('audiodescription.mp3')"
+            controls="controls"
+          ></audio>
+        </div>
         <p>
           Gustavo Rost, 22, acorda todo dia para trabalhar por volta das oito
           horas da manhã. Ele mora no bairro Jardim Carvalho, na Zona Leste de
@@ -26,12 +33,12 @@
       <div id="first-section" class="inside-paralax"></div>
       <div class="container pt-8">
         <p>
-          Segundo a pesquisa Gestão de Pessoas na Crise covid-19, elaborada pela
-          Fundação Instituto de Administração (FIA) em 2020, 46% das empresas
-          adotaram o modelo remoto como medida emergencial para não colocar em
-          risco os trabalhadores. Para Gustavo, esse modelo se manteve durante e
-          após o período de isolamento, uma prática já comum para quem trabalha
-          com computação.
+          Segundo a pesquisa Gestão de Pessoas na Crise da Covid-19, elaborada
+          pela Fundação Instituto de Administração (FIA) em 2020, 46% das
+          empresas adotaram o modelo remoto como medida emergencial para não
+          colocar em risco os trabalhadores. Para Gustavo, esse modelo se
+          manteve durante e após o período de isolamento, uma prática já comum
+          para quem trabalha com computação.
         </p>
         <p>
           O jovem ingressou na graduação na Unisinos em 2022 e sempre trabalhou
@@ -77,7 +84,7 @@
         </p>
       </div>
       <div class="col-12 md:col news__image flex align-items-center">
-        <img :src="`/src/assets/img/brenda_img.webp`" alt="" srcset="" />
+        <img :src="fetchImage('brenda_img.webp')" alt="" srcset="" lazyload />
       </div>
     </section>
     <section class="news__section container py-8">
@@ -88,11 +95,11 @@
         atuando como repórter. Sem saber que esse modelo iria fazer parte da sua
         rotina, a jornalista continuou sendo pressionada pelo cenário
         pós-pandêmico, já que as únicas vagas que surgiam eram remotas. Para
-        conseguir arcar com esse novo desafio do mercado, o que, por direito,
-        deveria ser responsabilidade das empresas, Brenda teve que ir atrás. A
-        jornalista equipou o seu ambiente com o essencial para poder produzir,
-        mas só conseguiu isso gastando o dinheiro de trabalhos informais que
-        também fazia.
+        conseguir lidar com esse novo desafio do mercado, o que, por direito,
+        deveria ser responsabilidade das empresas, Brenda precisou se estruturar
+        sozinha. A jornalista equipou o seu ambiente com o essencial para poder
+        produzir, mas só conseguiu isso gastando o dinheiro de trabalhos
+        informais que também fazia.
       </p>
     </section>
     <section class="news__section py-8">
@@ -143,11 +150,15 @@
         </p>
         <p>
           O trabalho remoto, ou teletrabalho, também é o formato reconhecido
-          pela legislação brasileira e assegurado pela Lei nº 14.442/22,
-          promulgada em setembro de 2022. É ela que estabelece as condições para
-          que o trabalho à distância seja realizado de forma segura e eficaz,
-          garantindo os direitos dos profissionais. Contudo, as condições do
-          serviço não podem ser relativas.
+          pela legislação brasileira e assegurado pela
+          <a
+            href="https://legislacao.presidencia.gov.br/atos/?tipo=LEI&numero=14442&ano=2022&ato=86bQTRq5kMZpWTa86"
+            target="_blank"
+            >Lei nº 14.442/22</a
+          >, promulgada em setembro de 2022. É ela que estabelece as condições
+          para que o trabalho à distância seja realizado de forma segura e
+          eficaz, garantindo os direitos dos profissionais. Contudo, as
+          condições do serviço não podem ser relativas.
         </p>
         <p>
           Para a professora da Universidade Federal do Rio Grande do Sul e PhD
@@ -195,6 +206,21 @@
             </span>
           </div>
         </div>
+      </div>
+    </section>
+    <section
+      class="news__section news__section--image grid align-items-center"
+      id="isabela"
+    >
+      <div class="md:col-3 news__image">
+        <img
+          :src="fetchImage('isabela_img-1.webp')"
+          alt=""
+          srcset=""
+          lazyload
+        />
+      </div>
+      <div class="md:col-6 px-8">
         <p class="mt-8">
           Isso significa que a base de um trabalho remoto saudável é a
           flexibilidade, tanto para trabalhador quanto para empresa. Para a
@@ -206,16 +232,6 @@
           foi abalado. “Não consigo me aproximar tanto ou confiar, porque a
           abertura para amizades fica menor”, explica Isabela.
         </p>
-      </div>
-    </section>
-    <section
-      class="news__section news__section--image grid align-items-center"
-      id="isabela"
-    >
-      <div class="md:col-3 news__image">
-        <img :src="`/src/assets/img/isabela_img-1.webp`" alt="" srcset="" />
-      </div>
-      <div class="md:col-6 px-8">
         <p>
           A flexibilidade também se apresenta como uma ferramenta benéfica para
           o bem estar social. Para Isabela, o principal desafio que enfrentou
@@ -227,7 +243,12 @@
         <p></p>
       </div>
       <div class="md:col-3 news__image">
-        <img :src="`/src/assets/img/isabela_img-2.webp`" alt="" srcset="" />
+        <img
+          :src="fetchImage('isabela_img-2.webp')"
+          alt=""
+          srcset=""
+          lazyload
+        />
       </div>
     </section>
     <section class="news__section">
@@ -244,7 +265,7 @@
           de trabalhar mesmo em um momento delicado, mas também trouxe os
           desafios que o distanciamento dos colegas exige.
         </p>
-        <blockquoteVue :data="secondQuotation" class="mb-8"></blockquoteVue>
+        <blockquoteVue :data="thirdQuotation" class="mb-8"></blockquoteVue>
       </div>
       <div id="third-section" class="inside-paralax"></div>
       <div class="container py-8">
@@ -262,29 +283,270 @@
         </p>
       </div>
     </section>
-    <section
-      class="news__section news__section--chart container grid text-center justify-content-between align-items-center"
-    >
-      <h2 class="col-12 mb-4">
-        Distribuição salarial por etnia no trabalho remoto em âmbito nacional.
-      </h2>
-      <div class="col-12 md:col-6">
-        <ChartsPie :data="data" :options="options"></ChartsPie>
+    <section class="news__section news__section--chart py-8">
+      <div class="container">
+        <h2 class="mb-8">Quem pode escolher como trabalha?</h2>
+        <p>
+          Quanto à diversidade, o cenário de quem tem a possibilidade de optar
+          por trabalhar remotamente é bem definido, tanto no Brasil, quanto no
+          Rio Grande do Sul. Segundo dados da
+          <a
+            href="https://www.ipea.gov.br/portal/images/stories/PDFs/conjuntura/220722_cc56_nota6_trabalho_remoto.pdf"
+            >PNAD Contínua do IBGE</a
+          >, do IBGE, de 2022, a distribuição salarial funciona de maneira
+          desigual. Isso levanta o questionamento de para quem essas vagas de
+          trabalho são pensadas. As desigualdades sociais que já existem no
+          formato presencial são herdadas pelo trabalho remoto, principalmente
+          nos quesitos gênero, escolaridade e etnia.
+        </p>
+        <p>
+          O teletrabalho contempla mais pessoas brancas, que correspondem a 60%
+          da concentração trabalhista e detém 70,3% da massa de rendimentos
+          efetivos. O valor recebido de trabalho também é desigual: segundo a
+          63ª edição da Pesquisa Salarial realizada pela
+          <a
+            href="https://www.catho.com.br/carreira-sucesso/negros-ganham-menos-que-brancos/#:~:text=Dados%20da%2063%C2%AA%20edi%C3%A7%C3%A3o%20da,n%C3%ADveis%20hier%C3%A1rquicos%20e%20de%20escolaridade."
+            >Catcho</a
+          >, um profissional não branco que trabalha remotamente e tem a mesma
+          escolaridade de uma pessoa branca recebe até 34,15% a menos em todos
+          os níveis hierárquicos de empresas.
+        </p>
       </div>
-      <div class="col-12 md:col-6 grid">
-        <img
-          :src="`/src/assets/img/chart-4.svg`"
-          alt=""
-          class="md:col-12 col-12"
-        />
-        <div class="grid col-12 justify-content-between">
-          <p class="md:col-6 col-12 news__subtitle">
-            29,6% <span>Pretos ou pardos</span>
-          </p>
-          <p class="md:col-6 col-12 news__subtitle">
-            70,3% <span>Brancos</span>
-          </p>
+    </section>
+    <section
+      class="news__section news__section--chart grid text-center justify-content-between align-items-center py-8"
+    >
+      <div class="container grid">
+        <h2 class="col-12 mb-4">
+          Distribuição salarial por etnia no trabalho <br />remoto em âmbito
+          nacional
+        </h2>
+        <div class="col-12 md:col-6">
+          <ChartsPie :data="data"></ChartsPie>
         </div>
+        <div class="col-12 md:col-6 grid">
+          <img
+            :src="fetchImage('chart-4.svg')"
+            alt=""
+            class="md:col-12 col-12"
+            lazyload
+          />
+          <div class="grid col-12 justify-content-between">
+            <p class="md:col-6 col-12 news__subtitle">
+              <b>29,6%</b> <br /><span>Pretos e pardos</span>
+            </p>
+            <p class="md:col-6 col-12 news__subtitle">
+              <b>70,3%</b> <br /><span>Brancos</span>
+            </p>
+            <p>Fonte: PNAD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news__section py-8">
+      <div class="container">
+        <p>
+          Apesar das mulheres representarem 58,3% do trabalho remoto, elas
+          seriam responsáveis por apenas 45,9% dos rendimentos econômicos. Mesmo
+          sendo maioria e com a mesma escolaridade, ganham salários inferiores e
+          caso sejam donas de negócios, lucram menos que os homens.
+        </p>
+        <div class="news__section--chart">
+          <h2 class="mb-3">
+            Distribuição salarial por gênero no<br />
+            trabalho remoto (nacional)
+          </h2>
+          <div class="md:col-7 mx-auto col-12 py-8">
+            <ChartsPie :data="dataBr"></ChartsPie>
+            <p>Fonte: PNAD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news__section py-8">
+      <div class="container">
+        <p>
+          Uma pesquisa liderada pela
+          <a
+            href="https://www.conversion.com.br/blog/pesquisa-revela-que-ricos-tem-150-mais-acesso-ao-home-office-que-os-mais-pobres-no-brasil/"
+            >Agência Conversion</a
+          >, mostrou que pessoas com maior poder aquisitivo tem cerca de 150%
+          mais acesso a oportunidades remotas do que os mais pobres. Nas classes
+          D e E, as mais baixas da pirâmide socioeconômica, apenas 20% conseguem
+          trabalhar de casa. Mais de 80% da massa salarial do teletrabalho é de
+          pessoas com ensino superior completo. Um terço dos trabalhadores em
+          regime remoto tem ensino médio completo, porém, eles são responsáveis
+          por apenas 16,7% da massa de rendimento. Ou seja, há uma desigualdade
+          que parte do princípio de nível de escolaridade e condições de vida
+          que vem antes do trabalho.
+        </p>
+      </div>
+    </section>
+    <section class="news__section news__section--chart py-8">
+      <div class="container">
+        <h2 class="mb-4">E quanto ao sul?</h2>
+        <p>
+          A região sul do Brasil é líder nacional no quesito falta de
+          oportunidades para minorias sociais em formato remoto. Por aqui,
+          indivíduos brancos detêm mais de três quartos da massa de rendimentos
+          do trabalho remoto potencial, enquanto no Norte e Nordeste são as
+          pessoas pretas ou pardas que possuem maior participação da massa
+          salarial.
+        </p>
+        <h2 class="col-12 mb-4">
+          Distribuição salarial por etnia do trabalho remoto no Sul
+        </h2>
+        <div class="col-12 md:col-7 mx-auto">
+          <Charts :data="dataSul" :options="options"></Charts>
+          <p class="col-12 text-center">Fonte: PNAD</p>
+        </div>
+      </div>
+      <div class="col-12 grid justify-content-center gap-4">
+        <div class="md:col-12">
+          <h2>
+            Distribuição salarial por etnia do trabalho remoto por macrorregião
+          </h2>
+        </div>
+        <div class="md:col-4">
+          <h4>Centro Oeste</h4>
+          <Charts :data="dataCO" :options="options"></Charts>
+        </div>
+        <div class="md:col-4">
+          <h4>Nordeste</h4>
+
+          <Charts :data="dataNE" :options="options"></Charts>
+        </div>
+        <div class="md:col-4">
+          <h4>Norte</h4>
+
+          <Charts :data="dataN" :options="options"></Charts>
+        </div>
+        <div class="md:col-4">
+          <h4>Sudeste</h4>
+
+          <Charts :data="dataSD" :options="options"></Charts>
+        </div>
+        <p class="col-12 text-center">Fonte: PNAD</p>
+      </div>
+    </section>
+    <section class="news__section">
+      <div class="container py-8">
+        <p>
+          Seguindo a média nacional, o Sul também é o local onde há uma
+          dominação predominante de trabalhadores homens em formato remoto e
+          menos mulheres, apesar delas serem a maior força de trabalho no
+          Brasil. Apesar disso, nas regiões mais ao norte, a distribuição é
+          menos desigual, com destaque para a região Nordeste. Em contrapartida,
+          por aqui o cenário se inverte.
+        </p>
+        <div class="news__section--chart">
+          <h2 class="mb-3">
+            Distribuição salarial por genêro do<br />
+            trabalho remoto na Região Sul
+          </h2>
+          <div class="md:col-7 mx-auto col-12 py-8">
+            <ChartsPie :data="dataSul_1"></ChartsPie>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 grid justify-content-center gap-4">
+        <div class="md:col-12">
+          <h2>
+            Distribuição salarial por etnia do trabalho remoto por macrorregião
+          </h2>
+        </div>
+        <div class="md:col-4">
+          <h4>Centro Oeste</h4>
+          <ChartsPie :data="dataCO_1"></ChartsPie>
+        </div>
+        <div class="md:col-4">
+          <h4>Nordeste</h4>
+
+          <ChartsPie :data="dataNE_1"></ChartsPie>
+        </div>
+        <div class="md:col-4">
+          <h4>Norte</h4>
+
+          <ChartsPie :data="dataN_1"></ChartsPie>
+        </div>
+        <div class="md:col-4">
+          <h4>Sudeste</h4>
+
+          <ChartsPie :data="dataSD_1"></ChartsPie>
+        </div>
+        <p class="col-12 text-center">Fonte: PNAD</p>
+      </div>
+    </section>
+    <section class="news__section">
+      <div class="container py-8">
+        <p>
+          Quanto à escolaridade, a distribuição desigual é homogênea em todas as
+          macrorregiões, nas quais pessoas com ensino superior completo
+          correspondem por cerca de 80% dos números. Isso deixa claro que ter um
+          diploma de graduação é um fator importante para quem quer trabalhar em
+          formato remoto. Em uma reviravolta, na região Sul, pessoas com ensino
+          médio concluído receberam mais de 20% dessa massa salarial, enquanto
+          nas demais regiões esse percentual oscila em torno de 15%.
+        </p>
+        <div class="news__section--chart">
+          <h2 class="mb-3">
+            Distribuição salarial por escolaridade no<br />
+            trabalho remoto na Região Sul
+          </h2>
+          <div class="md:col-7 mx-auto col-12 py-8">
+            <ChartsDoughnutVue :data="dataSul_2"></ChartsDoughnutVue>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 grid justify-content-center gap-4">
+        <div class="md:col-12">
+          <h2>
+            Distribuição salarial por escolaridade no trabalho remoto por
+            macrorregião
+          </h2>
+        </div>
+        <div class="md:col-4">
+          <h4>Centro Oeste</h4>
+          <ChartsDoughnutVue :data="dataCO_2"></ChartsDoughnutVue>
+        </div>
+        <div class="md:col-4">
+          <h4>Nordeste</h4>
+          <ChartsDoughnutVue :data="dataNE_2"></ChartsDoughnutVue>
+        </div>
+        <div class="md:col-4">
+          <h4>Norte</h4>
+          <ChartsDoughnutVue :data="dataN_2"></ChartsDoughnutVue>
+        </div>
+        <div class="md:col-4">
+          <h4>Sudeste</h4>
+          <ChartsDoughnutVue :data="dataSD_2"></ChartsDoughnutVue>
+        </div>
+        <p class="col-12 text-center">Fonte: PNAD</p>
+      </div>
+    </section>
+    <section class="news__section">
+      <div class="container py-8">
+        <h2 class="mb-4">Futuros possíveis</h2>
+        <p>
+          Observar os números de quem pode ou não escolher trabalhar da forma
+          que deseja, escancara que ainda que o trabalho fora de uma base fixa
+          cresça cada vez mais, ele também reforça distanciamentos sociais e
+          privilegia um grupo específico de pessoas. Christine explica que para
+          que o modelo se estabeleça como um modelo sólido e uma alternativa
+          para as pessoas que se encontram em situações atípicas e avessas à
+          possibilidade do presencial, ainda será preciso que as empresas se
+          adaptem e que os gestores visualizem novos cenários.
+        </p>
+        <p>
+          A especialista conclui que esse modelo está condenado às mãos de
+          setores específicos do mercado de trabalho e, também, a quem pode
+          optar por ele sem perder o conforto e a produtividade que é esperada
+          na rotina profissional. Para ela, o rumo do trabalho remoto depende do
+          quanto as organizações vão se personalizar e compreender as
+          especificidades de seus trabalhadores.
+        </p>
+        <BlockquoteVue :data="fourthQuotation"></BlockquoteVue>
+        <credit-list></credit-list>
       </div>
     </section>
   </main>
@@ -293,41 +555,254 @@
 <script>
 import BlockquoteVue from "../components/atom/BlockquoteVue.vue"
 import ChartsPie from "../components/molecules/ChartsPie.vue"
+import Charts from "../components/molecules/Charts.vue"
+import ChartsDoughnutVue from "../components/molecules/ChartsDoughnut.vue"
+import CreditList from "../components/molecules/CreditList.vue"
 
 export default {
   name: "Home",
-  components: { ChartsPie, BlockquoteVue },
+  components: {
+    Charts,
+    ChartsPie,
+    ChartsDoughnutVue,
+    BlockquoteVue,
+    CreditList,
+  },
   data() {
     return {
       data: {
-        labels: ["Pretos ou pardos", "Brancos"],
+        labels: ["Pretos e pardos", "Brancos"],
         datasets: [
           {
             label:
               "Distribuição salarial por etnia no trabalho remoto em âmbito nacional",
-            backgroundColor: ["#B2784A", "#EBDACC"],
+            backgroundColor: ["#59371C", "#B2784A"],
             data: [29.6, 70.3],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataSul: {
+        labels: ["Pretos e pardos", "Brancos"],
+        datasets: [
+          {
+            label: "Distribuição salarial por etnia do trabalho remoto no Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [11.4, 88.6],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataCO: {
+        labels: ["Pretos e pardos", "Brancos"],
+        datasets: [
+          {
+            label: "Distribuição salarial por etnia do trabalho remoto no Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [46.3, 53.4],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataNE: {
+        labels: ["Pretos e pardos", "Brancos"],
+        datasets: [
+          {
+            label: "Distribuição salarial por etnia do trabalho remoto no Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [57.8, 42.2],
             hoverOffset: 10,
           },
         ],
       },
       options: {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         plugins: {
           legend: {
-            display: true, // Adicione isso para exibir a legenda (pode ser false se não quiser)
+            display: false, // Adicione isso para exibir a legenda (pode ser false se não quiser)
             position: "bottom", // Posição da legenda
           },
-          subtitle: {
-            display: true,
-            text: "Custom Chart Subtitle",
+        },
+      },
+      dataN: {
+        labels: ["Pretos e pardos", "Brancos"],
+        datasets: [
+          {
+            label: "Distribuição salarial por etnia do trabalho remoto no Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [67.4, 32.2],
+            hoverOffset: 10,
           },
-        },
-        canvas: {
-          width: 200, // ajuste o valor conforme necessário
-          height: 200, // ajuste o valor conforme necessário
-        },
+        ],
+      },
+      dataSD: {
+        labels: ["Pretos e pardos", "Brancos"],
+        datasets: [
+          {
+            label: "Distribuição salarial por etnia do trabalho remoto no Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [23.1, 76.8],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataSul_1: {
+        labels: ["Mulheres", "Homens"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por etnia do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [44.3, 55.7],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataCO_1: {
+        labels: ["Mulheres", "Homens"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por etnia do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [47.9, 52.1],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataNE_1: {
+        labels: ["Mulheres", "Homens"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por etnia do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [49.1, 50.9],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataN_1: {
+        labels: ["Mulheres", "Homens"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por etnia do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [48.5, 51.5],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataSD_1: {
+        labels: ["Mulheres", "Homens"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por etnia do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [45.1, 54.9],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataSul_2: {
+        labels: [
+          "Sem instrução ou fundamental incompleto",
+          "Fundamental Completo ou médio incompleto",
+          "Médio completo ou superior incompleto",
+          "Superior Completo ou pós-graduação",
+        ],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por escolaridade do trabalho remoto na Região Sul",
+            backgroundColor: ["#59371C", "#B2784A", "#703506", "#A24C09"],
+            data: [0.7, 1.6, 21.5, 76.2],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataCO_2: {
+        labels: [
+          "Sem instrução ou fundamental incompleto",
+          "Fundamental Completo ou médio incompleto",
+          "Médio completo ou superior incompleto",
+          "Superior Completo ou pós-graduação",
+        ],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por escolaridade do trabalho remoto na Região Centro Oeste",
+            backgroundColor: ["#59371C", "#B2784A", "#703506", "#A24C09"],
+            data: [1, 1.6, 15.7, 81.6],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataNE_2: {
+        labels: [
+          "Sem instrução ou fundamental incompleto",
+          "Fundamental Completo ou médio incompleto",
+          "Médio completo ou superior incompleto",
+          "Superior Completo ou pós-graduação",
+        ],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por escolaridade do trabalho remoto na Região Nordeste",
+            backgroundColor: ["#59371C", "#B2784A", "#703506", "#A24C09"],
+            data: [1.3, 1.9, 16.5, 80.9],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataN_2: {
+        labels: [
+          "Sem instrução ou fundamental incompleto",
+          "Fundamental Completo ou médio incompleto",
+          "Médio completo ou superior incompleto",
+          "Superior Completo ou pós-graduação",
+        ],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por escolaridade do trabalho remoto na Região Norte",
+            backgroundColor: ["#59371C", "#B2784A", "#703506", "#A24C09"],
+            data: [0.8, 1.9, 17.7, 79.6],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataSD_2: {
+        labels: [
+          "Sem instrução ou fundamental incompleto",
+          "Fundamental Completo ou médio incompleto",
+          "Médio completo ou superior incompleto",
+          "Superior Completo ou pós-graduação",
+        ],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por escolaridade do trabalho remoto na Região Sudeste",
+            backgroundColor: ["#59371C", "#B2784A", "#703506", "#A24C09"],
+            data: [0.7, 1.4, 15.3, 82.6],
+            hoverOffset: 10,
+          },
+        ],
+      },
+      dataBr: {
+        labels: ["Homens", "Mulheres"],
+        datasets: [
+          {
+            label:
+              "Distribuição salarial por gênero no trabalho remoto (nacional)",
+            backgroundColor: ["#59371C", "#B2784A"],
+            data: [54.1, 41.9],
+            hoverOffset: 10,
+          },
+        ],
       },
       firstQuotation: {
         quote:
@@ -339,12 +814,25 @@ export default {
           "Cada organização é uma, cada tipo de cargo é um e as pessoas são diferentes. Esse modelo não serve para todo mundo ou ao menos não serve em curto prazo. Existe toda uma preparação necessária para isso. Ele é um trabalho que é feito à distância, fora de uma base institucional presencial consolidada e ele pode ser muito bom, mas algumas pessoas realmente podem não se adaptar por vários motivos.",
         name: "Christine Souza, PhD em recursos humanos",
       },
-      thirdQuitation: {
+      thirdQuotation: {
         quote:
           "O trabalho remoto tem muitos benefícios, mas somos seres sociáveis e acredito que precisamos de gente.",
         name: "Matheus Stremel",
       },
+      fourthQuotation: {
+        quote:
+          "Não dá para dizer exatamente se no futuro vai ficar tudo híbrido, tudo presencial ou tudo remoto. Eu acho que esse vai ser um tema que por anos ainda vai virar um espaço de conflito.",
+        name: "Christine Souza",
+      },
     }
+  },
+  methods: {
+    fetchImage(img_src) {
+      return new URL(`/src/assets/img/${img_src}`, import.meta.url).href
+    },
+    fetchAudio(src) {
+      return new URL(`/src/assets/mp3/${src}`, import.meta.url).href
+    },
   },
 }
 </script>
@@ -370,23 +858,26 @@ main {
       }
     }
     &__subtitle {
-      font-size: 1rem !important;
+      font-size: 2rem !important;
       width: fit-content;
+      line-height: 1 !important;
       &:first-child {
-        color: var(--marrom-claro);
+        color: var(--marrom-escuro);
       }
-      &:last-child {
-        color: var(--bege);
-      }
+
+      color: var(--marrom-claro);
     }
     &__image {
       background: url("../assets/img/brenda_img.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      height: 110vh;
       display: block;
       position: relative;
+      margin: -25px 0;
+      img {
+        box-shadow: 0px 10px 41px -3px rgba(0, 0, 0, 0.1);
+      }
       &::after {
         content: "";
         width: 100%;
@@ -426,7 +917,8 @@ main {
       }
       &--chart {
         h2 {
-          font-size: 2.5rem;
+          font-size: 2.25rem;
+          font-weight: 400;
         }
       }
       blockquote {
@@ -452,7 +944,6 @@ main {
       }
       &--image {
         background: var(--bege);
-        max-height: 100vh;
         &:not(#isabela) {
           padding-left: 10%;
           img {
@@ -482,6 +973,10 @@ main {
       &.container {
         z-index: 1;
         margin: 4rem auto;
+      }
+      a{
+        text-decoration: underline;
+        color: var(--marrom-claro);
       }
       p {
         margin-bottom: 3rem;
@@ -519,19 +1014,11 @@ main {
         h5 {
           z-index: 1;
           color: var(--white);
+          font-weight: 400;
         }
         h2 {
           font-size: 4.25rem;
           position: relative;
-          &::after {
-            content: "";
-            border: 2px solid var(--bege);
-            height: 3px;
-            width: 100%;
-            position: absolute;
-            display: block;
-            bottom: 0;
-          }
         }
         h3 {
           font-size: 1.75rem;
