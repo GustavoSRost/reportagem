@@ -57,6 +57,9 @@ input, button, textarea, select {
   font: inherit;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 :root{
   --bege: #EBDACC;
