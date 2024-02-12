@@ -4,10 +4,9 @@
       <div class="container">
         <h2>O futuro do trabalho é remoto?</h2>
         <h3>
-          A procura por vagas de trabalho a distância aumentou, mas ainda
-          existem dúvidas se essa modalidade é inclusiva.
+          A procura por vagas que vão além do escritório aumentou, mas ainda
+          existem dúvidas se essa modalidade é inclusiva
         </h3>
-        <h5>Por Carla Melo, Daniela Lacerda, Laura Borges, Renata Rosa.</h5>
       </div>
     </section>
     <section class="news__section my-8 py-3">
@@ -24,8 +23,7 @@
           necessidade.
         </p>
       </div>
-      <div id="first-section" class="inside-paralax">
-      </div>
+      <div id="first-section" class="inside-paralax"></div>
       <div class="container pt-8">
         <p>
           Segundo a pesquisa Gestão de Pessoas na Crise covid-19, elaborada pela
@@ -52,7 +50,7 @@
       class="news__section news__section--image grid align-content-center"
     >
       <div
-        class="col-12 md:col-8 container flex flex-column align-items-center justify-content-center md:py-8 md:pr-8"
+        class="col-12 md:col container flex flex-column align-items-center justify-content-center md:py-8 md:pr-8"
       >
         <p>
           Do outro lado da cidade, no Centro Histórico, a jornalista Brenda
@@ -78,7 +76,9 @@
           estruturado para trabalhar, nem era favorável à sua saúde.
         </p>
       </div>
-      <div class="col-12 md:col news__image"></div>
+      <div class="col-12 md:col news__image flex align-items-center">
+        <img :src="`/src/assets/img/brenda_img.webp`" alt="" srcset="" />
+      </div>
     </section>
     <section class="news__section container py-8">
       <blockquoteVue :data="firstQuotation"></blockquoteVue>
@@ -120,7 +120,7 @@
       <iframe
         width="90%"
         height="780"
-        src="https://www.youtube.com/embed/I_W7DbDvDtY?si=N6cumQC4-pqKrnOX"
+        src="https://www.youtube.com/embed/2onN7BlDvrk?si=kwKEN9wYfinG4JIz?autoplay=1"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -177,7 +177,89 @@
           circunstâncias importantes para serem asseguradas, como as condições
           organizacionais, físicas e cognitivas do empregado.
         </p>
-        <blockquoteVue :data="secondQuotation"></blockquoteVue>
+        <blockquoteVue :data="secondQuotation" class="mb-8"></blockquoteVue>
+        <div class="flex news__icon-bar justify-content-around">
+          <div class="flex md:col-5 gap-3">
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <b>Home Office:</b><br />
+              trabalho realizado em casa
+            </span>
+          </div>
+          <div class="flex md:col-5 gap-3">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <span>
+              <b>Trabalho Remoto/Tele-trabalho:</b><br />
+              trabalho que se concentra fora de uma base fixa, podendo ser
+              realizado em qualquer lugar
+            </span>
+          </div>
+        </div>
+        <p class="mt-8">
+          Isso significa que a base de um trabalho remoto saudável é a
+          flexibilidade, tanto para trabalhador quanto para empresa. Para a
+          estudante de publicidade que há três anos atua na área, Isabela
+          Balconi, 26, os benefícios são vantajosos no remoto. “Maior
+          concentração, mais conforto, silêncio, não precisar me locomover pela
+          questão de tempo e questão financeira também”, conta a estudante. Em
+          contrapartida, o desenvolvimento de relações profissionais e pessoais
+          foi abalado. “Não consigo me aproximar tanto ou confiar, porque a
+          abertura para amizades fica menor”, explica Isabela.
+        </p>
+      </div>
+    </section>
+    <section
+      class="news__section news__section--image grid align-items-center"
+      id="isabela"
+    >
+      <div class="md:col-3 news__image">
+        <img :src="`/src/assets/img/isabela_img-1.webp`" alt="" srcset="" />
+      </div>
+      <div class="md:col-6 px-8">
+        <p>
+          A flexibilidade também se apresenta como uma ferramenta benéfica para
+          o bem estar social. Para Isabela, o principal desafio que enfrentou
+          estando nesse modelo de trabalho foi a solidão e a insegurança. "Foi
+          minha primeira experiência na posição que ocupo hoje, então sentia que
+          nunca desenvolveria a confiança que tenho hoje se estivesse sozinha em
+          casa", comenta a estudante de publicidade.
+        </p>
+        <p></p>
+      </div>
+      <div class="md:col-3 news__image">
+        <img :src="`/src/assets/img/isabela_img-2.webp`" alt="" srcset="" />
+      </div>
+    </section>
+    <section class="news__section">
+      <div class="container py-8">
+        <p>
+          O mesmo acontece com o estudante de Ciências Econômicas, Matheus
+          Stremel, 25. Há 5 anos, ele está no mercado de trabalho e já enfrentou
+          diferentes cenários: presencial, remoto e híbrido. Depois da pandemia,
+          quando toda sua equipe voltou ao escritório, ele escolheu permanecer
+          em casa para cuidar da mãe que enfrentava um câncer.
+        </p>
+        <p>
+          A possibilidade de escolha fez a diferença para que ele não deixasse
+          de trabalhar mesmo em um momento delicado, mas também trouxe os
+          desafios que o distanciamento dos colegas exige.
+        </p>
+        <blockquoteVue :data="secondQuotation" class="mb-8"></blockquoteVue>
+      </div>
+      <div id="third-section" class="inside-paralax"></div>
+      <div class="container py-8">
+        <p>
+          Por isso a flexibilidade é tão importante para garantir que o
+          trabalhador encontre a forma de trabalho que melhor se encaixe em sua
+          rotina. Precisar ou não de uma base fixa é uma discussão que deve
+          estar centrada no bem-estar do profissional, e não necessariamente
+          apenas nas vantagens para as empresas.
+        </p>
+        <p>
+          Para além dos benefícios individuais para quem trabalha, os dados mais
+          recentes mostram que o modelo remoto também enfrenta outro desafio:
+          reconhecer e se adaptar às diferenças individuais de cada pessoa.
+        </p>
       </div>
     </section>
     <section
@@ -257,6 +339,11 @@ export default {
           "Cada organização é uma, cada tipo de cargo é um e as pessoas são diferentes. Esse modelo não serve para todo mundo ou ao menos não serve em curto prazo. Existe toda uma preparação necessária para isso. Ele é um trabalho que é feito à distância, fora de uma base institucional presencial consolidada e ele pode ser muito bom, mas algumas pessoas realmente podem não se adaptar por vários motivos.",
         name: "Christine Souza, PhD em recursos humanos",
       },
+      thirdQuitation: {
+        quote:
+          "O trabalho remoto tem muitos benefícios, mas somos seres sociáveis e acredito que precisamos de gente.",
+        name: "Matheus Stremel",
+      },
     }
   },
 }
@@ -270,6 +357,18 @@ main {
     animation: background 1s ease-in;
   }
   .news {
+    &__icon-bar {
+      font-family: "Roboto";
+      text-align: start;
+      b {
+        font-size: 1.25rem;
+        color: var(--marrom-escuro);
+      }
+      i {
+        font-size: 3.25rem;
+        color: var(--marrom-escuro);
+      }
+    }
     &__subtitle {
       font-size: 1rem !important;
       width: fit-content;
@@ -281,18 +380,32 @@ main {
       }
     }
     &__image {
-      background: url("../assets/img/gustavo_img.webp");
+      background: url("../assets/img/brenda_img.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       height: 110vh;
       display: block;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.1px);
+        -webkit-backdrop-filter: blur(9.1px);
+        z-index: 0;
+      }
       @media (max-width: 992px) {
         height: auto;
       }
     }
     &__section {
-      .inside-paralax{
+      .inside-paralax {
         background-attachment: fixed;
         background-size: cover;
         width: 100vw;
@@ -306,15 +419,6 @@ main {
           width: fit-content;
           margin: 0 auto;
           font-size: 3rem;
-          &::after {
-            content: "";
-            border: 2px solid var(--bege);
-            height: 3px;
-            width: 100%;
-            position: absolute;
-            display: block;
-            bottom: 0;
-          }
         }
       }
       &:nth-child(odd) {
@@ -348,12 +452,31 @@ main {
       }
       &--image {
         background: var(--bege);
-        color: var(--marrom-escuro);
-        padding-left: 10%;
         max-height: 100vh;
+        &:not(#isabela) {
+          padding-left: 10%;
+          img {
+            transform: translateX(-60px);
+          }
+        }
+        &#isabela {
+          background: var(--white);
+          .news__image {
+            height: fit-content;
+            &:first-child {
+              background-image: url("../assets/img/isabela_img-1.webp");
+              transform: translateY(-50px);
+            }
+            &:last-child {
+              background-image: url("../assets/img/isabela_img-2.webp");
+              transform: translateY(50px);
+            }
+          }
+        }
         img {
           object-fit: cover;
-          height: 100%;
+          position: relative;
+          z-index: 1;
         }
       }
       &.container {
@@ -418,8 +541,11 @@ main {
     }
   }
 }
-#first-section{
+#first-section {
   background-image: url("../assets/img/gustavo_img.webp");
+}
+#third-section {
+  background-image: url("../assets/img/matheus_img.webp");
 }
 @keyframes background {
   from {
