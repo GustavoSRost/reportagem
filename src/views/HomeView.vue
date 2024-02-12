@@ -67,9 +67,7 @@
           notebook. Cópias, impressões e o seu celular foram suas ferramentas de
           estudo, sendo suas principais aliadas na trajetória acadêmica. Com
           determinação, Brenda se formou na Universidade Federal do Rio Grande
-          do Sul
-         (UFRGS)
-          em 2018 e já tinha seu lugar no mercado.
+          do Sul (UFRGS) em 2018 e já tinha seu lugar no mercado.
         </p>
 
         <p>
@@ -101,13 +99,19 @@
     <section class="news__section py-8">
       <div class="container">
         <p>
-          Em dezembro de 2023, o <a href="https://trends.google.com.br/trends/yis/2023/BR/?hl=pt">Google Trends</a> divulgou um levantamento sobre o
-          que os brasileiros mais pesquisaram na plataforma ao longo do ano.
-          Entre as tendências que marcaram o período, o mercado de trabalho não
-          poderia ficar de fora. Porém, diferente dos anos anteriores, não foi
-          somente a pesquisa por “vaga de trabalho” que fez parte da rotina da
-          população. Agora, as “vagas home office” ficaram em primeiro lugar nas
-          buscas por novas oportunidades no Google.
+          Em dezembro de 2023, o
+          <a
+            href="https://trends.google.com.br/trends/yis/2023/BR/?hl=pt"
+            target="_blank"
+            >Google Trends</a
+          >
+          divulgou um levantamento sobre o que os brasileiros mais pesquisaram
+          na plataforma ao longo do ano. Entre as tendências que marcaram o
+          período, o mercado de trabalho não poderia ficar de fora. Porém,
+          diferente dos anos anteriores, não foi somente a pesquisa por “vaga de
+          trabalho” que fez parte da rotina da população. Agora, as “vagas home
+          office” ficaram em primeiro lugar nas buscas por novas oportunidades
+          no Google.
         </p>
         <p>
           Só no ano passado, o aumento foi de 50%, mas segundo pesquisas
@@ -288,6 +292,7 @@
           Rio Grande do Sul. Segundo dados da
           <a
             href="https://www.ipea.gov.br/portal/images/stories/PDFs/conjuntura/220722_cc56_nota6_trabalho_remoto.pdf"
+            target="_blank"
             >PNAD Contínua do IBGE</a
           >, do IBGE, de 2022, a distribuição salarial funciona de maneira
           desigual. Isso levanta o questionamento de para quem essas vagas de
@@ -301,8 +306,9 @@
           efetivos. O valor recebido de trabalho também é desigual: segundo a
           63ª edição da Pesquisa Salarial realizada pela
           <a
+            target="_blank"
             href="https://www.catho.com.br/carreira-sucesso/negros-ganham-menos-que-brancos/#:~:text=Dados%20da%2063%C2%AA%20edi%C3%A7%C3%A3o%20da,n%C3%ADveis%20hier%C3%A1rquicos%20e%20de%20escolaridade."
-            >Catcho</a
+            >Catho</a
           >, um profissional não branco que trabalha remotamente e tem a mesma
           escolaridade de uma pessoa branca recebe até 34,15% a menos em todos
           os níveis hierárquicos de empresas.
@@ -364,6 +370,7 @@
         <p>
           Uma pesquisa liderada pela
           <a
+            target="_blank"
             href="https://www.conversion.com.br/blog/pesquisa-revela-que-ricos-tem-150-mais-acesso-ao-home-office-que-os-mais-pobres-no-brasil/"
             >Agência Conversion</a
           >, mostrou que pessoas com maior poder aquisitivo tem cerca de 150%
@@ -431,7 +438,7 @@
           Seguindo a média nacional, o Sul também é o local onde há uma
           dominação predominante de trabalhadores homens em formato remoto e
           menos mulheres, apesar delas serem a maior força de trabalho no
-          Brasil. Apesar disso, nas regiões mais ao norte, a distribuição é
+          Brasil. Nas regiões mais ao norte, a distribuição é
           menos desigual, com destaque para a região Nordeste. Em contrapartida,
           por aqui o cenário se inverte.
         </p>
@@ -970,7 +977,7 @@ main {
         z-index: 1;
         margin: 4rem auto;
       }
-      a{
+      a {
         text-decoration: underline;
         color: var(--marrom-claro);
       }
