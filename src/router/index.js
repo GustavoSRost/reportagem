@@ -6,13 +6,5 @@ const router = createRouter({
   routes: routes
 })
 
-router.beforeEach((to, from, next) => {
-  const canonical = document.querySelector("link[rel='canonical']");
-  
-  const urlWithoutQueryParams = location.href.split('?')[0];
-  canonical.setAttribute('href', urlWithoutQueryParams);
-
-  next();
-});
 
 export default router
