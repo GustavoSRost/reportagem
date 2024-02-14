@@ -33,7 +33,7 @@
       <div id="first-section" class="inside-paralax"></div>
       <div class="container pt-8">
         <p>
-          Segundo a pesquisa Gestão de Pessoas na Crise da Covid-19, elaborada
+          Segundo a pesquisa <a href="https://jornal.usp.br/wp-content/uploads/2020/11/Pesquisa-Gest%C3%A3o-de-Pessoas-na-Crise-de-Covid-19-ITA.pdf">Gestão de Pessoas na Crise da Covid-19</a>, elaborada
           pela Fundação Instituto de Administração (FIA) em 2020, 46% das
           empresas adotaram o modelo remoto como medida emergencial para não
           colocar em risco os trabalhadores. Para Gustavo, esse modelo se
@@ -294,7 +294,7 @@
             href="https://www.ipea.gov.br/portal/images/stories/PDFs/conjuntura/220722_cc56_nota6_trabalho_remoto.pdf"
             target="_blank"
             >PNAD Contínua do IBGE</a
-          >, do IBGE, de 2022, a distribuição salarial funciona de maneira
+          >, de 2022, a distribuição salarial funciona de maneira
           desigual. Isso levanta o questionamento de para quem essas vagas de
           trabalho são pensadas. As desigualdades sociais que já existem no
           formato presencial são herdadas pelo trabalho remoto, principalmente
@@ -438,9 +438,9 @@
           Seguindo a média nacional, o Sul também é o local onde há uma
           dominação predominante de trabalhadores homens em formato remoto e
           menos mulheres, apesar delas serem a maior força de trabalho no
-          Brasil. Nas regiões mais ao norte, a distribuição é
-          menos desigual, com destaque para a região Nordeste. Em contrapartida,
-          por aqui o cenário se inverte.
+          Brasil. Nas regiões mais ao norte, a distribuição é menos desigual,
+          com destaque para a região Nordeste. Em contrapartida, por aqui o
+          cenário se inverte.
         </p>
         <div class="news__section--chart">
           <h2 class="mb-3">
